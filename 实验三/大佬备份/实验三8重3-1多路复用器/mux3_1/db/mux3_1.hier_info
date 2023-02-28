@@ -1,0 +1,41 @@
+|mux3_1
+a[0] => y[0]~16.DATAB
+a[1] => y[1]~14.DATAB
+a[2] => y[2]~13.DATAB
+a[3] => y[3]~12.DATAB
+a[4] => y[4]~11.DATAB
+a[5] => y[5]~10.DATAB
+a[6] => y[6]~9.DATAB
+a[7] => y[7]~8.DATAB
+b[0] => y[0]~15.DATAB
+b[1] => y[1]~6.DATAB
+b[2] => y[2]~5.DATAB
+b[3] => y[3]~4.DATAB
+b[4] => y[4]~3.DATAB
+b[5] => y[5]~2.DATAB
+b[6] => y[6]~1.DATAB
+b[7] => y[7]~0.DATAB
+c[0] => y[0]~15.DATAA
+c[1] => y[1]~6.DATAA
+c[2] => y[2]~5.DATAA
+c[3] => y[3]~4.DATAA
+c[4] => y[4]~3.DATAA
+c[5] => y[5]~2.DATAA
+c[6] => y[6]~1.DATAA
+c[7] => y[7]~0.DATAA
+madd[0] => Equal0.IN0
+madd[0] => Equal1.IN0
+madd[0] => Equal2.IN1
+madd[1] => Equal0.IN1
+madd[1] => Equal1.IN1
+madd[1] => Equal2.IN0
+y[0] <= y[0]~17.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y[1]~18.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y[2]~19.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y[3]~20.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= y[4]~21.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= y[5]~22.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= y[6]~23.DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= y[7]~25.DB_MAX_OUTPUT_PORT_TYPE
+
+

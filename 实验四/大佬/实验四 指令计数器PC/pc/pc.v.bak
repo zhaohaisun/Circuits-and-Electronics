@@ -1,0 +1,19 @@
+module pc(a, pc_ld, pc_inc, clk, add);
+   input [7:0]  a;
+   input        pc_ld;
+   input        pc_inc;
+   input        clk;
+   output reg[7:0] add;
+   reg [7:0]    ADDR;
+   
+   always @(negedge clk)
+   begin
+       if (pc_inc == 1'b1&&pc_ld==1'b0)
+               ADDR <= ADDR + 8'b00000001;
+       else if (pc_ld == 1'b1&&pc_inc==1'b0)
+               ADDR <= a;
+      else
+         ADDR <= 8'b00000000;
+      add <= ADDR;
+   end
+endmodule

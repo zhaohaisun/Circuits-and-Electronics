@@ -1,0 +1,326 @@
+Simulator report for alu
+Sat Dec 11 17:01:41 2021
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------+
+; Simulator Summary                             ;
++-----------------------------+-----------------+
+; Type                        ; Value           ;
++-----------------------------+-----------------+
+; Simulation Start Time       ; 0 ps            ;
+; Simulation End Time         ; 35.0 ns         ;
+; Simulation Netlist Size     ; 97 nodes        ;
+; Simulation Coverage         ;      42.48 %    ;
+; Total Number of Transitions ; 175             ;
+; Simulation Breakpoints      ; 0               ;
+; Family                      ; FLEX10K         ;
+; Device                      ; EPF10K10TI144-4 ;
++-----------------------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; alu.vwf    ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      42.48 % ;
+; Total nodes checked                                 ; 97           ;
+; Total output ports checked                          ; 113          ;
+; Total output ports with complete 1/0-value coverage ; 48           ;
+; Total output ports with no 1/0-value coverage       ; 51           ;
+; Total output ports with no 1-value coverage         ; 60           ;
+; Total output ports with no 0-value coverage         ; 56           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                 ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+; Node Name                                                                ; Output Port Name                                                              ; Output Port Type ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+; |alu|t~64                                                                ; |alu|t~64                                                                     ; data_out0        ;
+; |alu|Equal1~0                                                            ; |alu|Equal1~0                                                                 ; data_out0        ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[8] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]      ; data_out0        ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]      ; data_out0        ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]~COUT ; cout             ;
+; |alu|zf~4                                                                ; |alu|zf~4                                                                     ; data_out0        ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; data_out0        ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; data_out0        ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |alu|zf~5                                                                ; |alu|zf~5                                                                     ; data_out0        ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]      ; data_out0        ;
+; |alu|always0~2                                                           ; |alu|always0~2                                                                ; data_out0        ;
+; |alu|t~66                                                                ; |alu|t~66                                                                     ; data_out0        ;
+; |alu|t~67                                                                ; |alu|t~67                                                                     ; data_out0        ;
+; |alu|Equal5~0                                                            ; |alu|Equal5~0                                                                 ; data_out0        ;
+; |alu|Equal6~0                                                            ; |alu|Equal6~0                                                                 ; data_out0        ;
+; |alu|t~68                                                                ; |alu|t~68                                                                     ; data_out0        ;
+; |alu|t~69                                                                ; |alu|t~69                                                                     ; data_out0        ;
+; |alu|t~70                                                                ; |alu|t~70                                                                     ; data_out0        ;
+; |alu|t~71                                                                ; |alu|t~71                                                                     ; data_out0        ;
+; |alu|t~72                                                                ; |alu|t~72                                                                     ; data_out0        ;
+; |alu|t~74                                                                ; |alu|t~74                                                                     ; data_out0        ;
+; |alu|t~86                                                                ; |alu|t~86                                                                     ; data_out0        ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]      ; data_out0        ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]~COUT ; cout             ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; data_out0        ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]      ; data_out0        ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]~COUT ; cout             ;
+; |alu|t~109                                                               ; |alu|t~109                                                                    ; data_out0        ;
+; |alu|t~158                                                               ; |alu|t~158                                                                    ; data_out0        ;
+; |alu|t~159                                                               ; |alu|t~159                                                                    ; data_out0        ;
+; |alu|t~160                                                               ; |alu|t~160                                                                    ; data_out0        ;
+; |alu|t~161                                                               ; |alu|t~161                                                                    ; data_out0        ;
+; |alu|t~162                                                               ; |alu|t~162                                                                    ; data_out0        ;
+; |alu|t~163                                                               ; |alu|t~163                                                                    ; data_out0        ;
+; |alu|t~164                                                               ; |alu|t~164                                                                    ; data_out0        ;
+; |alu|t~144                                                               ; |alu|t~211                                                                    ; cascout          ;
+; |alu|t~165                                                               ; |alu|t~213                                                                    ; cascout          ;
+; |alu|m                                                                   ; |alu|m~corein                                                                 ; dataout          ;
+; |alu|s[2]                                                                ; |alu|s[2]~corein                                                              ; dataout          ;
+; |alu|s[1]                                                                ; |alu|s[1]~corein                                                              ; dataout          ;
+; |alu|s[3]                                                                ; |alu|s[3]~corein                                                              ; dataout          ;
+; |alu|s[0]                                                                ; |alu|s[0]~corein                                                              ; dataout          ;
+; |alu|a[6]                                                                ; |alu|a[6]~corein                                                              ; dataout          ;
+; |alu|a[7]                                                                ; |alu|a[7]~corein                                                              ; dataout          ;
+; |alu|t[0]                                                                ; |alu|t[0]                                                                     ; padio            ;
+; |alu|t[1]                                                                ; |alu|t[1]                                                                     ; padio            ;
+; |alu|t[7]                                                                ; |alu|t[7]                                                                     ; padio            ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                    ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+; Node Name                                                                ; Output Port Name                                                              ; Output Port Type ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+; |alu|cf~4                                                                ; |alu|cf~4                                                                     ; data_out0        ;
+; |alu|cf~5                                                                ; |alu|cf~5                                                                     ; data_out0        ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[8] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]~COUT ; cout             ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]      ; data_out0        ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]~COUT ; cout             ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]      ; data_out0        ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]~COUT ; cout             ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]      ; data_out0        ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]~COUT ; cout             ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; data_out0        ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT ; cout             ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |alu|zf~6                                                                ; |alu|zf~6                                                                     ; data_out0        ;
+; |alu|zf~8                                                                ; |alu|zf~8                                                                     ; data_out0        ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |alu|t~65                                                                ; |alu|t~65                                                                     ; data_out0        ;
+; |alu|t~76                                                                ; |alu|t~76                                                                     ; data_out0        ;
+; |alu|t~78                                                                ; |alu|t~78                                                                     ; data_out0        ;
+; |alu|t~80                                                                ; |alu|t~80                                                                     ; data_out0        ;
+; |alu|t~82                                                                ; |alu|t~82                                                                     ; data_out0        ;
+; |alu|t~84                                                                ; |alu|t~84                                                                     ; data_out0        ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; data_out0        ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT ; cout             ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; data_out0        ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]      ; data_out0        ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]~COUT ; cout             ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]      ; data_out0        ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]~COUT ; cout             ;
+; |alu|t~148                                                               ; |alu|t~219                                                                    ; cascout          ;
+; |alu|t~167                                                               ; |alu|t~221                                                                    ; cascout          ;
+; |alu|t~150                                                               ; |alu|t~223                                                                    ; cascout          ;
+; |alu|t~168                                                               ; |alu|t~225                                                                    ; cascout          ;
+; |alu|t~152                                                               ; |alu|t~227                                                                    ; cascout          ;
+; |alu|t~169                                                               ; |alu|t~229                                                                    ; cascout          ;
+; |alu|t~154                                                               ; |alu|t~231                                                                    ; cascout          ;
+; |alu|t~170                                                               ; |alu|t~233                                                                    ; cascout          ;
+; |alu|t~156                                                               ; |alu|t~235                                                                    ; cascout          ;
+; |alu|t~171                                                               ; |alu|t~237                                                                    ; cascout          ;
+; |alu|a[0]                                                                ; |alu|a[0]~corein                                                              ; dataout          ;
+; |alu|b[0]                                                                ; |alu|b[0]~corein                                                              ; dataout          ;
+; |alu|a[1]                                                                ; |alu|a[1]~corein                                                              ; dataout          ;
+; |alu|a[2]                                                                ; |alu|a[2]~corein                                                              ; dataout          ;
+; |alu|a[3]                                                                ; |alu|a[3]~corein                                                              ; dataout          ;
+; |alu|a[4]                                                                ; |alu|a[4]~corein                                                              ; dataout          ;
+; |alu|a[5]                                                                ; |alu|a[5]~corein                                                              ; dataout          ;
+; |alu|b[7]                                                                ; |alu|b[7]~corein                                                              ; dataout          ;
+; |alu|b[5]                                                                ; |alu|b[5]~corein                                                              ; dataout          ;
+; |alu|b[4]                                                                ; |alu|b[4]~corein                                                              ; dataout          ;
+; |alu|b[3]                                                                ; |alu|b[3]~corein                                                              ; dataout          ;
+; |alu|b[2]                                                                ; |alu|b[2]~corein                                                              ; dataout          ;
+; |alu|b[1]                                                                ; |alu|b[1]~corein                                                              ; dataout          ;
+; |alu|cf                                                                  ; |alu|cf                                                                       ; padio            ;
+; |alu|zf                                                                  ; |alu|zf                                                                       ; padio            ;
+; |alu|t[2]                                                                ; |alu|t[2]                                                                     ; padio            ;
+; |alu|t[3]                                                                ; |alu|t[3]                                                                     ; padio            ;
+; |alu|t[4]                                                                ; |alu|t[4]                                                                     ; padio            ;
+; |alu|t[5]                                                                ; |alu|t[5]                                                                     ; padio            ;
+; |alu|t[6]                                                                ; |alu|t[6]                                                                     ; padio            ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                    ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+; Node Name                                                                ; Output Port Name                                                              ; Output Port Type ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+; |alu|cf~4                                                                ; |alu|cf~4                                                                     ; data_out0        ;
+; |alu|cf~5                                                                ; |alu|cf~5                                                                     ; data_out0        ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]      ; data_out0        ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]~COUT ; cout             ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]      ; data_out0        ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]~COUT ; cout             ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]      ; data_out0        ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]~COUT ; cout             ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; data_out0        ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT ; cout             ;
+; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |alu|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |alu|zf~6                                                                ; |alu|zf~6                                                                     ; data_out0        ;
+; |alu|zf~8                                                                ; |alu|zf~8                                                                     ; data_out0        ;
+; |alu|t~65                                                                ; |alu|t~65                                                                     ; data_out0        ;
+; |alu|t~78                                                                ; |alu|t~78                                                                     ; data_out0        ;
+; |alu|t~80                                                                ; |alu|t~80                                                                     ; data_out0        ;
+; |alu|t~82                                                                ; |alu|t~82                                                                     ; data_out0        ;
+; |alu|t~84                                                                ; |alu|t~84                                                                     ; data_out0        ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; data_out0        ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT ; cout             ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |alu|zf~12                                                               ; |alu|zf~21                                                                    ; cascout          ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]      ; data_out0        ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]~COUT ; cout             ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]      ; data_out0        ;
+; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |alu|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]~COUT ; cout             ;
+; |alu|zf~14                                                               ; |alu|zf~14                                                                    ; data_out0        ;
+; |alu|t~146                                                               ; |alu|t~215                                                                    ; cascout          ;
+; |alu|t~166                                                               ; |alu|t~217                                                                    ; cascout          ;
+; |alu|t~148                                                               ; |alu|t~219                                                                    ; cascout          ;
+; |alu|t~167                                                               ; |alu|t~221                                                                    ; cascout          ;
+; |alu|t~150                                                               ; |alu|t~223                                                                    ; cascout          ;
+; |alu|t~168                                                               ; |alu|t~225                                                                    ; cascout          ;
+; |alu|t~152                                                               ; |alu|t~227                                                                    ; cascout          ;
+; |alu|t~169                                                               ; |alu|t~229                                                                    ; cascout          ;
+; |alu|t~154                                                               ; |alu|t~231                                                                    ; cascout          ;
+; |alu|t~170                                                               ; |alu|t~233                                                                    ; cascout          ;
+; |alu|t~156                                                               ; |alu|t~235                                                                    ; cascout          ;
+; |alu|t~171                                                               ; |alu|t~237                                                                    ; cascout          ;
+; |alu|a[1]                                                                ; |alu|a[1]~corein                                                              ; dataout          ;
+; |alu|a[2]                                                                ; |alu|a[2]~corein                                                              ; dataout          ;
+; |alu|a[3]                                                                ; |alu|a[3]~corein                                                              ; dataout          ;
+; |alu|a[4]                                                                ; |alu|a[4]~corein                                                              ; dataout          ;
+; |alu|a[5]                                                                ; |alu|a[5]~corein                                                              ; dataout          ;
+; |alu|b[7]                                                                ; |alu|b[7]~corein                                                              ; dataout          ;
+; |alu|b[6]                                                                ; |alu|b[6]~corein                                                              ; dataout          ;
+; |alu|b[5]                                                                ; |alu|b[5]~corein                                                              ; dataout          ;
+; |alu|b[4]                                                                ; |alu|b[4]~corein                                                              ; dataout          ;
+; |alu|b[3]                                                                ; |alu|b[3]~corein                                                              ; dataout          ;
+; |alu|b[2]                                                                ; |alu|b[2]~corein                                                              ; dataout          ;
+; |alu|cf                                                                  ; |alu|cf                                                                       ; padio            ;
+; |alu|zf                                                                  ; |alu|zf                                                                       ; padio            ;
+; |alu|t[3]                                                                ; |alu|t[3]                                                                     ; padio            ;
+; |alu|t[4]                                                                ; |alu|t[4]                                                                     ; padio            ;
+; |alu|t[5]                                                                ; |alu|t[5]                                                                     ; padio            ;
+; |alu|t[6]                                                                ; |alu|t[6]                                                                     ; padio            ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sat Dec 11 17:01:40 2021
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off alu -c alu
+Info: Using vector source file "D:/qua/quarter/alu/alu.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      42.48 %
+Info: Number of transitions in simulation is 175
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 163 megabytes
+    Info: Processing ended: Sat Dec 11 17:01:41 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

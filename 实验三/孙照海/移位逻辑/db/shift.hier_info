@@ -1,0 +1,47 @@
+|shift
+fbus => always0~0.IN0
+fbus => always0~4.IN0
+fbus => always0~2.IN0
+flbus => always0~2.IN1
+flbus => always0~4.IN1
+flbus => always0~0.IN1
+frbus => always0~5.IN0
+frbus => always0~1.IN0
+frbus => always0~3.IN0
+a[0] => w[7]~1.DATAA
+a[0] => w[1]~7.DATAB
+a[0] => w[0]~16.DATAB
+a[0] => cf~0.DATAB
+a[1] => w[2]~6.DATAB
+a[1] => w[1]~15.DATAB
+a[1] => w[0]~0.DATAA
+a[2] => w[3]~5.DATAB
+a[2] => w[2]~14.DATAB
+a[2] => w[1]~7.DATAA
+a[3] => w[4]~4.DATAB
+a[3] => w[3]~13.DATAB
+a[3] => w[2]~6.DATAA
+a[4] => w[5]~3.DATAB
+a[4] => w[4]~12.DATAB
+a[4] => w[3]~5.DATAA
+a[5] => w[6]~2.DATAB
+a[5] => w[5]~11.DATAB
+a[5] => w[4]~4.DATAA
+a[6] => w[7]~1.DATAB
+a[6] => w[6]~10.DATAB
+a[6] => w[5]~3.DATAA
+a[7] => w[7]~9.DATAB
+a[7] => w[6]~2.DATAA
+a[7] => w[0]~0.DATAB
+a[7] => cf~1.DATAB
+w[0] <= w[0]~17.DB_MAX_OUTPUT_PORT_TYPE
+w[1] <= w[1]~18.DB_MAX_OUTPUT_PORT_TYPE
+w[2] <= w[2]~19.DB_MAX_OUTPUT_PORT_TYPE
+w[3] <= w[3]~20.DB_MAX_OUTPUT_PORT_TYPE
+w[4] <= w[4]~21.DB_MAX_OUTPUT_PORT_TYPE
+w[5] <= w[5]~22.DB_MAX_OUTPUT_PORT_TYPE
+w[6] <= w[6]~23.DB_MAX_OUTPUT_PORT_TYPE
+w[7] <= w[7]~25.DB_MAX_OUTPUT_PORT_TYPE
+cf <= cf~2.DB_MAX_OUTPUT_PORT_TYPE
+
+

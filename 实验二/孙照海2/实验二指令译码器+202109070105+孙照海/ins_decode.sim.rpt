@@ -1,0 +1,219 @@
+Simulator report for ins_decode
+Wed Nov 16 23:28:43 2022
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 55 nodes     ;
+; Simulation Coverage         ;      96.36 % ;
+; Total Number of Transitions ; 869          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C5T144C8  ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Option                                                                                     ; Setting        ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Simulation mode                                                                            ; Timing         ; Timing        ;
+; Start time                                                                                 ; 0 ns           ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF           ;               ;
+; Vector input source                                                                        ; ins_decode.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On             ; On            ;
+; Check outputs                                                                              ; Off            ; Off           ;
+; Report simulation coverage                                                                 ; On             ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On             ; On            ;
+; Display missing 1-value coverage report                                                    ; On             ; On            ;
+; Display missing 0-value coverage report                                                    ; On             ; On            ;
+; Detect setup and hold time violations                                                      ; Off            ; Off           ;
+; Detect glitches                                                                            ; Off            ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off            ; Off           ;
+; Generate Signal Activity File                                                              ; Off            ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off            ; Off           ;
+; Group bus channels in simulation results                                                   ; Off            ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On             ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE     ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off            ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto           ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      96.36 % ;
+; Total nodes checked                                 ; 55           ;
+; Total output ports checked                          ; 55           ;
+; Total output ports with complete 1/0-value coverage ; 53           ;
+; Total output ports with no 1/0-value coverage       ; 2            ;
+; Total output ports with no 1-value coverage         ; 2            ;
+; Total output ports with no 0-value coverage         ; 2            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                        ;
++----------------------+--------------------------+------------------+
+; Node Name            ; Output Port Name         ; Output Port Type ;
++----------------------+--------------------------+------------------+
+; |ins_decode|movb~17  ; |ins_decode|movb~17      ; combout          ;
+; |ins_decode|mova~3   ; |ins_decode|mova~3       ; combout          ;
+; |ins_decode|mova~4   ; |ins_decode|mova~4       ; combout          ;
+; |ins_decode|mova~5   ; |ins_decode|mova~5       ; combout          ;
+; |ins_decode|movc~3   ; |ins_decode|movc~3       ; combout          ;
+; |ins_decode|Equal3~0 ; |ins_decode|Equal3~0     ; combout          ;
+; |ins_decode|Equal3~1 ; |ins_decode|Equal3~1     ; combout          ;
+; |ins_decode|in1~8    ; |ins_decode|in1~8        ; combout          ;
+; |ins_decode|sub~3    ; |ins_decode|sub~3        ; combout          ;
+; |ins_decode|and1~4   ; |ins_decode|and1~4       ; combout          ;
+; |ins_decode|and1~5   ; |ins_decode|and1~5       ; combout          ;
+; |ins_decode|halt~11  ; |ins_decode|halt~11      ; combout          ;
+; |ins_decode|rsr~7    ; |ins_decode|rsr~7        ; combout          ;
+; |ins_decode|rsl~8    ; |ins_decode|rsl~8        ; combout          ;
+; |ins_decode|Equal9~0 ; |ins_decode|Equal9~0     ; combout          ;
+; |ins_decode|jmp~8    ; |ins_decode|jmp~8        ; combout          ;
+; |ins_decode|jz~9     ; |ins_decode|jz~9         ; combout          ;
+; |ins_decode|jz~10    ; |ins_decode|jz~10        ; combout          ;
+; |ins_decode|jc~10    ; |ins_decode|jc~10        ; combout          ;
+; |ins_decode|jc~11    ; |ins_decode|jc~11        ; combout          ;
+; |ins_decode|in1~9    ; |ins_decode|in1~9        ; combout          ;
+; |ins_decode|nop~10   ; |ins_decode|nop~10       ; combout          ;
+; |ins_decode|halt~12  ; |ins_decode|halt~12      ; combout          ;
+; |ins_decode|halt~13  ; |ins_decode|halt~13      ; combout          ;
+; |ins_decode|add~6    ; |ins_decode|add~6        ; combout          ;
+; |ins_decode|not1~9   ; |ins_decode|not1~9       ; combout          ;
+; |ins_decode|out1~13  ; |ins_decode|out1~13      ; combout          ;
+; |ins_decode|movb~18  ; |ins_decode|movb~18      ; combout          ;
+; |ins_decode|movb~5   ; |ins_decode|movb~5       ; combout          ;
+; |ins_decode|mova     ; |ins_decode|mova         ; padio            ;
+; |ins_decode|movb     ; |ins_decode|movb         ; padio            ;
+; |ins_decode|add      ; |ins_decode|add          ; padio            ;
+; |ins_decode|sub      ; |ins_decode|sub          ; padio            ;
+; |ins_decode|and1     ; |ins_decode|and1         ; padio            ;
+; |ins_decode|not1     ; |ins_decode|not1         ; padio            ;
+; |ins_decode|rsr      ; |ins_decode|rsr          ; padio            ;
+; |ins_decode|rsl      ; |ins_decode|rsl          ; padio            ;
+; |ins_decode|jmp      ; |ins_decode|jmp          ; padio            ;
+; |ins_decode|jz       ; |ins_decode|jz           ; padio            ;
+; |ins_decode|jc       ; |ins_decode|jc           ; padio            ;
+; |ins_decode|in1      ; |ins_decode|in1          ; padio            ;
+; |ins_decode|out1     ; |ins_decode|out1         ; padio            ;
+; |ins_decode|nop      ; |ins_decode|nop          ; padio            ;
+; |ins_decode|halt     ; |ins_decode|halt         ; padio            ;
+; |ins_decode|ir[2]    ; |ins_decode|ir[2]~corein ; combout          ;
+; |ins_decode|ir[3]    ; |ins_decode|ir[3]~corein ; combout          ;
+; |ins_decode|ir[4]    ; |ins_decode|ir[4]~corein ; combout          ;
+; |ins_decode|ir[5]    ; |ins_decode|ir[5]~corein ; combout          ;
+; |ins_decode|ir[6]    ; |ins_decode|ir[6]~corein ; combout          ;
+; |ins_decode|ir[0]    ; |ins_decode|ir[0]~corein ; combout          ;
+; |ins_decode|ir[1]    ; |ins_decode|ir[1]~corein ; combout          ;
+; |ins_decode|ir[7]    ; |ins_decode|ir[7]~corein ; combout          ;
+; |ins_decode|en       ; |ins_decode|en~corein    ; combout          ;
++----------------------+--------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------+
+; Missing 1-Value Coverage                                   ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |ins_decode|movc~4 ; |ins_decode|movc~4 ; combout          ;
+; |ins_decode|movc   ; |ins_decode|movc   ; padio            ;
++--------------------+--------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------+
+; Missing 0-Value Coverage                                   ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |ins_decode|movc~4 ; |ins_decode|movc~4 ; combout          ;
+; |ins_decode|movc   ; |ins_decode|movc   ; padio            ;
++--------------------+--------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Nov 16 23:28:43 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ins_decode -c ins_decode
+Info: Using vector source file "C:/Users/Lenovo/Desktop/学习/电路与电子学/实验二/孙照海2/实验二指令译码器+202109070105+孙照海/ins_decode.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      96.36 %
+Info: Number of transitions in simulation is 869
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 165 megabytes
+    Info: Processing ended: Wed Nov 16 23:28:43 2022
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

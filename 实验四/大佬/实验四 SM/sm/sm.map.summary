@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Dec 25 11:41:25 2021
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : sm
+Top-level Entity Name : sm
+Family : Cyclone II
+Total logic elements : 1
+    Total combinational functions : 1
+    Dedicated logic registers : 1
+Total registers : 1
+Total pins : 3
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

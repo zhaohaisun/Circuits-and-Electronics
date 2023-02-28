@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="cpu">
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|LPM_RAM_IO:inst1|altram:sram|altsyncram:ram_block" CBX_FILE_NAME="altsyncram_rf91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|mux3_1:inst7|lpm_mux:Mux2" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|mux3_1:inst7|lpm_mux:Mux3" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|reg_group:inst11|lpm_mux:Mux12" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|reg_group:inst11|lpm_mux:Mux3" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|simple:inst12|lpm_mux:Mux2" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|mux3_1:inst7|lpm_mux:Mux4" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|reg_group:inst11|lpm_mux:Mux13" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|reg_group:inst11|lpm_mux:Mux4" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|simple:inst12|lpm_mux:Mux3" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|mux3_1:inst7|lpm_mux:Mux5" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|reg_group:inst11|lpm_mux:Mux14" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|reg_group:inst11|lpm_mux:Mux5" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|simple:inst12|lpm_mux:Mux4" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|mux3_1:inst7|lpm_mux:Mux6" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|reg_group:inst11|lpm_mux:Mux15" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|reg_group:inst11|lpm_mux:Mux6" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|simple:inst12|lpm_mux:Mux5" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|mux3_1:inst7|lpm_mux:Mux7" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|reg_group:inst11|lpm_mux:Mux16" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|reg_group:inst11|lpm_mux:Mux7" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|simple:inst12|lpm_mux:Mux6" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|mux3_1:inst7|lpm_mux:Mux0" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|reg_group:inst11|lpm_mux:Mux0" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|reg_group:inst11|lpm_mux:Mux17" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|reg_group:inst11|lpm_mux:Mux8" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|simple:inst12|lpm_mux:Mux7" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|mux3_1:inst7|lpm_mux:Mux1" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|reg_group:inst11|lpm_mux:Mux1" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|reg_group:inst11|lpm_mux:Mux10" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|reg_group:inst11|lpm_mux:Mux9" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|simple:inst12|lpm_mux:Mux0" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|reg_group:inst11|lpm_mux:Mux11" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|reg_group:inst11|lpm_mux:Mux2" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|simple:inst12|lpm_mux:Mux1" CBX_FILE_NAME="mux_joc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

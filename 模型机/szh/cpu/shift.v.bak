@@ -1,0 +1,34 @@
+module shift(fbus,flbus,frbus,a,w,cf);
+
+input fbus,flbus,frbus;
+input [7:0] a;
+output [7:0] w;
+output cf;
+reg [7:0]w;
+reg cf;
+always@(*)
+begin
+	w=8'b00000000;
+	cf=1'b0;
+	if(flbus==1)
+	begin
+	w[7:1]<=a[6:0];
+	cf<=a[7];
+	w[0]<=a[7];
+	end
+	else if(frbus==1)
+	begin
+	w[7]=a[0];
+	w[6:0]=a[7:1];
+	w[7]=a[0];
+	end
+	else if(fbus==1)
+	begin
+	w<=a;
+	end
+	else
+	begin
+	w<=8'bzzzz_zzzz;
+	end
+end
+endmodule

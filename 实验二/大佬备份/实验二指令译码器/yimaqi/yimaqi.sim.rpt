@@ -1,0 +1,215 @@
+Simulator report for yimaqi
+Sat Dec 11 17:02:27 2021
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 160.0 ns     ;
+; Simulation Netlist Size     ; 55 nodes     ;
+; Simulation Coverage         ;     100.00 % ;
+; Total Number of Transitions ; 381          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C5T144C6  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; yimaqi.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;     100.00 % ;
+; Total nodes checked                                 ; 55           ;
+; Total output ports checked                          ; 55           ;
+; Total output ports with complete 1/0-value coverage ; 55           ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 0            ;
+; Total output ports with no 0-value coverage         ; 0            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                ;
++------------------+----------------------+------------------+
+; Node Name        ; Output Port Name     ; Output Port Type ;
++------------------+----------------------+------------------+
+; |yimaqi|movb~17  ; |yimaqi|movb~17      ; combout          ;
+; |yimaqi|mova~3   ; |yimaqi|mova~3       ; combout          ;
+; |yimaqi|mova~4   ; |yimaqi|mova~4       ; combout          ;
+; |yimaqi|mova~5   ; |yimaqi|mova~5       ; combout          ;
+; |yimaqi|movc~3   ; |yimaqi|movc~3       ; combout          ;
+; |yimaqi|movc~4   ; |yimaqi|movc~4       ; combout          ;
+; |yimaqi|Equal3~0 ; |yimaqi|Equal3~0     ; combout          ;
+; |yimaqi|Equal3~1 ; |yimaqi|Equal3~1     ; combout          ;
+; |yimaqi|in1~8    ; |yimaqi|in1~8        ; combout          ;
+; |yimaqi|sub~3    ; |yimaqi|sub~3        ; combout          ;
+; |yimaqi|and1~4   ; |yimaqi|and1~4       ; combout          ;
+; |yimaqi|and1~5   ; |yimaqi|and1~5       ; combout          ;
+; |yimaqi|halt~11  ; |yimaqi|halt~11      ; combout          ;
+; |yimaqi|rsr~7    ; |yimaqi|rsr~7        ; combout          ;
+; |yimaqi|rsl~8    ; |yimaqi|rsl~8        ; combout          ;
+; |yimaqi|Equal9~0 ; |yimaqi|Equal9~0     ; combout          ;
+; |yimaqi|jmp~8    ; |yimaqi|jmp~8        ; combout          ;
+; |yimaqi|jz~9     ; |yimaqi|jz~9         ; combout          ;
+; |yimaqi|jz~10    ; |yimaqi|jz~10        ; combout          ;
+; |yimaqi|jc~10    ; |yimaqi|jc~10        ; combout          ;
+; |yimaqi|jc~11    ; |yimaqi|jc~11        ; combout          ;
+; |yimaqi|in1~9    ; |yimaqi|in1~9        ; combout          ;
+; |yimaqi|nop~10   ; |yimaqi|nop~10       ; combout          ;
+; |yimaqi|halt~12  ; |yimaqi|halt~12      ; combout          ;
+; |yimaqi|halt~13  ; |yimaqi|halt~13      ; combout          ;
+; |yimaqi|add~6    ; |yimaqi|add~6        ; combout          ;
+; |yimaqi|not1~9   ; |yimaqi|not1~9       ; combout          ;
+; |yimaqi|out1~13  ; |yimaqi|out1~13      ; combout          ;
+; |yimaqi|movb~18  ; |yimaqi|movb~18      ; combout          ;
+; |yimaqi|movb~5   ; |yimaqi|movb~5       ; combout          ;
+; |yimaqi|mova     ; |yimaqi|mova         ; padio            ;
+; |yimaqi|movb     ; |yimaqi|movb         ; padio            ;
+; |yimaqi|movc     ; |yimaqi|movc         ; padio            ;
+; |yimaqi|add      ; |yimaqi|add          ; padio            ;
+; |yimaqi|sub      ; |yimaqi|sub          ; padio            ;
+; |yimaqi|and1     ; |yimaqi|and1         ; padio            ;
+; |yimaqi|not1     ; |yimaqi|not1         ; padio            ;
+; |yimaqi|rsr      ; |yimaqi|rsr          ; padio            ;
+; |yimaqi|rsl      ; |yimaqi|rsl          ; padio            ;
+; |yimaqi|jmp      ; |yimaqi|jmp          ; padio            ;
+; |yimaqi|jz       ; |yimaqi|jz           ; padio            ;
+; |yimaqi|jc       ; |yimaqi|jc           ; padio            ;
+; |yimaqi|in1      ; |yimaqi|in1          ; padio            ;
+; |yimaqi|out1     ; |yimaqi|out1         ; padio            ;
+; |yimaqi|nop      ; |yimaqi|nop          ; padio            ;
+; |yimaqi|halt     ; |yimaqi|halt         ; padio            ;
+; |yimaqi|ir[2]    ; |yimaqi|ir[2]~corein ; combout          ;
+; |yimaqi|ir[3]    ; |yimaqi|ir[3]~corein ; combout          ;
+; |yimaqi|ir[4]    ; |yimaqi|ir[4]~corein ; combout          ;
+; |yimaqi|ir[5]    ; |yimaqi|ir[5]~corein ; combout          ;
+; |yimaqi|ir[6]    ; |yimaqi|ir[6]~corein ; combout          ;
+; |yimaqi|ir[0]    ; |yimaqi|ir[0]~corein ; combout          ;
+; |yimaqi|ir[1]    ; |yimaqi|ir[1]~corein ; combout          ;
+; |yimaqi|ir[7]    ; |yimaqi|ir[7]~corein ; combout          ;
+; |yimaqi|en       ; |yimaqi|en~corein    ; combout          ;
++------------------+----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sat Dec 11 17:02:27 2021
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off yimaqi -c yimaqi
+Info: Using vector source file "D:/qua/quarter/yimaqi/yimaqi.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is     100.00 %
+Info: Number of transitions in simulation is 381
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 169 megabytes
+    Info: Processing ended: Sat Dec 11 17:02:27 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

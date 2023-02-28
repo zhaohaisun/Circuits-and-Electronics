@@ -1,0 +1,10 @@
+Fitter Status : Successful - Fri Dec 17 20:50:52 2021
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : con_signal
+Top-level Entity Name : con_signal
+Family : FLEX10K
+Device : EPF10K10TI144-4
+Timing Models : Final
+Total logic elements : 30 / 576 ( 5 % )
+Total pins : 52 / 102 ( 51 % )
+Total memory bits : 0 / 6,144 ( 0 % )

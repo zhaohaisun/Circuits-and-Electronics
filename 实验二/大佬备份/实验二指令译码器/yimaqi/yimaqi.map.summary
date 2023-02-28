@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Dec 11 10:43:51 2021
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : yimaqi
+Top-level Entity Name : yimaqi
+Family : Cyclone II
+Total logic elements : 30
+    Total combinational functions : 30
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 25
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
